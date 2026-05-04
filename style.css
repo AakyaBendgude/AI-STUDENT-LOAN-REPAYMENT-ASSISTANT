@@ -1,0 +1,151 @@
+body {
+margin: 0;
+font-family: Arial;
+background: radial-gradient(circle at top,#0b1220,#020617);
+color: white;
+}
+
+.app {
+display: flex;
+height: 100vh;
+}
+
+.sidebar {
+width: 240px;
+background: #020617;
+padding: 20px;
+border-right: 1px solid #0f172a;
+}
+
+.new-chat {
+width: 100%;
+padding: 12px;
+background: linear-gradient(135deg,#22c55e,#06b6d4);
+border: none;
+color: white;
+border-radius: 12px;
+box-shadow: 0 0 15px #06b6d4;
+cursor: pointer;
+}
+
+.chat-list p {
+opacity: 0.7;
+}
+
+.main {
+flex: 1;
+padding: 25px;
+}
+
+.header {
+margin-bottom: 20px;
+padding: 15px;
+background: rgba(255,255,255,0.02);
+border-radius: 12px;
+box-shadow: 0 0 20px rgba(0,255,255,0.08);
+}
+
+.cards {
+display: grid;
+grid-template-columns: repeat(4,1fr);
+gap: 15px;
+}
+
+.card {
+background: #020617;
+padding: 18px;
+border-radius: 14px;
+font-size: 18px;
+font-weight: bold;
+box-shadow: 0 0 15px rgba(0,255,255,0.08);
+}
+
+.card span {
+display: block;
+font-size: 12px;
+opacity: 0.6;
+margin-top: 5px;
+}
+
+.grid {
+display: grid;
+grid-template-columns: 2fr 1fr;
+grid-template-rows: 260px 260px;
+gap: 15px;
+margin-top: 20px;
+}
+
+.chat-box,
+.chart-box,
+.pie-box,
+.calc-box {
+background: #020617;
+border-radius: 14px;
+box-shadow: 0 0 20px rgba(0,255,255,0.08);
+}
+
+.chat-box {
+display: flex;
+flex-direction: column;
+}
+
+#chat {
+flex: 1;
+padding: 10px;
+overflow-y: auto;
+}
+
+.chat-input {
+display: flex;
+padding: 10px;
+}
+
+.chat-input input {
+flex: 1;
+padding: 10px;
+border-radius: 20px;
+border: none;
+background: #111827;
+color: white;
+}
+
+.chat-input button {
+margin-left: 10px;
+background: #06b6d4;
+border: none;
+border-radius: 50%;
+width: 40px;
+height: 40px;
+color: white;
+cursor: pointer;
+}
+
+.calc-box {
+padding: 20px;
+}
+
+.slider-group {
+margin-bottom: 15px;
+}
+
+.slider-group label {
+display: flex;
+justify-content: space-between;
+font-size: 14px;
+margin-bottom: 5px;
+}
+
+.calc-box input {
+width: 100%;
+}
+
+.value {
+color: #22c55e;
+font-weight: bold;
+}
+
+#emi {
+margin-top: 15px;
+color: #06b6d4;
+text-shadow: 0 0 10px #06b6d4;
+}

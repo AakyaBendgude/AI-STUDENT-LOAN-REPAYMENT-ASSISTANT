@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>RepayMate Pro UI</title>
+
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+<div class="app">
+
+<div class="sidebar">
+<h2>RepayMate</h2>
+
+<button class="new-chat" onclick="newChat()">+ New Chat</button>
+
+<div class="chat-list">
+<p>Home Loan Advice</p>
+<p>Car Loan Planning</p>
+<p>Education Loan Help</p>
+</div>
+</div>
+
+<div class="main">
+
+<div class="header">
+<h2>Hello, Aakya 👋</h2>
+</div>
+
+<div class="cards">
+<div class="card">₹5,00,000<span>Total Loan</span></div>
+<div class="card">₹4,274<span>Monthly EMI</span></div>
+<div class="card">₹2,07,340<span>Total Interest</span></div>
+<div class="card">₹7,07,340<span>Total Payment</span></div>
+</div>
+
+<div class="grid">
+
+<div class="chat-box">
+<div id="chat"></div>
+
+<div class="chat-input">
+<input id="input" placeholder="Ask anything...">
+<button onclick="sendMessage()">➤</button>
+</div>
+</div>
+
+<div class="chart-box">
+<canvas id="incomeChart"></canvas>
+</div>
+
+<div class="pie-box">
+<canvas id="pieChart"></canvas>
+</div>
+
+<div class="calc-box">
+<h3>Loan Calculator</h3>
+
+<div class="slider-group">
+<label>Amount <span class="value" id="amountVal">₹50000</span></label>
+<input type="range" id="amount" min="1000" max="500000" value="50000">
+</div>
+
+<div class="slider-group">
+<label>Interest <span class="value" id="rateVal">10%</span></label>
+<input type="range" id="rate" min="1" max="20" value="10">
+</div>
+
+<div class="slider-group">
+<label>Years <span class="value" id="yearsVal">5 yrs</span></label>
+<input type="range" id="years" min="1" max="30" value="5">
+</div>
+
+<h2 id="emi">₹0</h2>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
