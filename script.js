@@ -9,7 +9,7 @@ function newChat() {
   const msg = document.createElement("div");
   msg.innerText = "💬 New chat started...";
   msg.style.opacity = "0.6";
-
+  
   chat.appendChild(msg);
 }
 
